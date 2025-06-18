@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Potato Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🥔 Smart Potato Disease Classifier</h1>
+      <p>Upload a potato leaf image to diagnose its health.</p>
+    </header>
+
+    <section class="upload-section">
+      <form id="uploadForm">
+        <label for="fileInput" class="file-label">📤 Choose an image</label>
+        <input type="file" id="fileInput" accept="image/*" hidden />
+        <button type="submit">🚀 Diagnose</button>
+      </form>
+      <div class="preview-container">
+        <img id="imagePreview" alt="Image Preview" />
+      </div>
+      <div id="result" class="result-box"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
